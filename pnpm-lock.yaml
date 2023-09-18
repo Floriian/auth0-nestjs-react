@@ -132,6 +132,9 @@ importers:
 
   apps/client:
     dependencies:
+      '@auth0/auth0-react':
+        specifier: ^2.2.1
+        version: 2.2.1(react-dom@18.2.0)(react@18.2.0)
       antd:
         specifier: ^5.9.1
         version: 5.9.1(react-dom@18.2.0)(react@18.2.0)
@@ -514,6 +517,21 @@ packages:
     resolution: {integrity: sha512-xCcXpoz52rI4ksJSdOCxeOCn2DLocxwHf9dVT/Q90Pte1LX+LY+91SFtJF3KXVHH8kEin+g1KKCQPKBjZJfWNA==}
     dependencies:
       xss: 1.0.14
+    dev: false
+
+  /@auth0/auth0-react@2.2.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-4L4FZvSqIwzVk5mwWFbWzfJ4Zq11dgS0v4KIGKro5tL9dgOnBGq+Ino/1mzexPV1LJHBkfwXG4+IaPiQNz5CGg==}
+    peerDependencies:
+      react: ^16.11.0 || ^17 || ^18
+      react-dom: ^16.11.0 || ^17 || ^18
+    dependencies:
+      '@auth0/auth0-spa-js': 2.1.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@auth0/auth0-spa-js@2.1.2:
+    resolution: {integrity: sha512-xdA65Z/U7++Y7L9Uwh8Q8OVOs6qgFz+fb7GAzHFjpr1icO37B//xdzLXm7ZRgA19RWrsNe1nme3h896igJSvvw==}
     dev: false
 
   /@babel/code-frame@7.22.13:
