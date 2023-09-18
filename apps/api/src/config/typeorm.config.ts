@@ -8,7 +8,7 @@ export const typeormConfig: TypeOrmModuleAsyncOptions = {
     useFactory: async (configService: ConfigService) => {
         return {
             type: 'postgres',
-            url: configService.get<IDatabaseConfig>("DATABASE_CONFIG").DATABASE_URL,
+            url: configService.get<IDatabaseConfig>(DATABASE_CONFIG).DATABASE_URL,
             entities: [],
         }
     },

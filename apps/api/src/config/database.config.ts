@@ -6,7 +6,4 @@ export const databaseConfig = registerAs<IDatabaseConfig>(DATABASE_CONFIG, () =>
 
 export interface IDatabaseConfig {
     DATABASE_URL: string;
-    // POSTGRES_USER: string;
-    // POSTGRES_PASSWORD: string;
-    // POSTGRES_DB: string;
 }
