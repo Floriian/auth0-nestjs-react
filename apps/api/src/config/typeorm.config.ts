@@ -1,6 +1,5 @@
 import {IDatabaseConfig, databaseConfig} from "@/config"
 import { DATABASE_CONFIG } from "@/constants";
-import { User } from "@/users/models/user.model";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { TypeOrmModuleAsyncOptions } from "@nestjs/typeorm";
 
@@ -10,7 +9,7 @@ export const typeormConfig: TypeOrmModuleAsyncOptions = {
         return {
             type: 'postgres',
             url: configService.get<IDatabaseConfig>(DATABASE_CONFIG).DATABASE_URL,
-            entities: [User],
+            entities: [],
             synchronize: true,
         }
     },
