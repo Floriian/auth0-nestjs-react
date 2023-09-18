@@ -8,7 +8,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [
     TypeOrmModule.forRootAsync(typeormConfig),
     ConfigModule.forRoot(),
-    GraphQLModule.forRoot(apolloConfig)
+    GraphQLModule.forRoot(apolloConfig),
   ],
   controllers: [],
   providers: [],
