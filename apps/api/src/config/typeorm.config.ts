@@ -9,8 +9,8 @@ export const typeormConfig: TypeOrmModuleAsyncOptions = {
         return {
             type: 'postgres',
             url: configService.get<IDatabaseConfig>(DATABASE_CONFIG).DATABASE_URL,
-            entities: [],
-            synchronize: true,
+            entities: ["dist/**/*.entity{.ts,.js}"],
+            migrations: ["dist/migrations/*{.ts,.js}"],
         }
     },
     inject: [ConfigService],
